@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineScope</title>
+
+    <!-- Connecting CSS and JS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <h1 class="site-logo">🎬 CineScope</h1>
+
+            <div class="search-bar">
+
+                <select class="genre-dropdown">
+                    <option>All Genres</option>
+                    <option>Action</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Horror</option>
+                    <option>Sci-Fi</option>
+                </select>
+
+                <input id="searchInput" type="text" placeholder="Search movies...">
+
+                <button id="searchBtn">Search</button>
+
+            </div>
+            <p id="message"></p>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Featured Movie</h2>
+            <h3>Interstellar</h3>
+
+            <p>
+                A team of explorers travel through a wormhole
+                in space in an attempt to ensure humanity's survival.
+            </p>
+        </section>
+
+        <section class="movies-section">
+
+            <h2>Popular Movies</h2>
+            <div id="moviesContainer">
+
+                <div class="movie-card">
+                    <h3>Avatar</h3>
+                    <p>2009</p>
+                </div>
+
+                <div class="movie-card">
+                    <h3>Inception</h3>
+                    <p>2010</p>
+                </div>
+
+                <div class="movie-card">
+                    <h3>Avengers</h3>
+                    <p>2012</p>
+                </div>
+
+                <div class="movie-card">
+                    <h3>Batman Begins</h3>
+                    <p>2005</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="watchlist">
+
+            <h2>My Watchlist</h2>
+
+            <p>No movies added yet.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CineScope</p>
+        <p>Search • Discover • Save Movies</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
