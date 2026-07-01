@@ -18,30 +18,12 @@ CineScope is a Movie Discovery web application built using HTML, CSS, and JavaSc
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- OMDb API
-- localStorage
-- Git & GitHub
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* OMDb API
 
----
-
-## 📸 Screenshots
-
-### Home Page
-
-<img width="1365" height="720" alt="screenshot_home" src="https://github.com/user-attachments/assets/b23a49e5-7b0f-47cb-95a3-534f331460ed" />
-
-
-### Watchlist
-
-<img width="1366" height="768" alt="screenshot_watchlist" src="https://github.com/user-attachments/assets/f88c8b36-bb44-465b-a346-fca55614ffde" />
-
-
----
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
 CineScope/
@@ -98,10 +80,6 @@ git clone https://github.com/14sivapriya/CineScope.git
 
 **Siva Priya**
 
-GitHub: https://github.com/14sivapriya
-
 ---
 
-## ⭐ If you like this project
-
-Please consider giving it a ⭐ on GitHub!
+⭐ If you like this project, consider giving it a star on GitHub!

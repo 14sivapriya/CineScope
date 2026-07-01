@@ -11,7 +11,11 @@ function createMovieCard(movie, btnType) {
     card.classList.add("movie-card");
 
     let img = document.createElement("img");
-    img.src = movie.Poster;
+    if (movie.Poster === "N/A") {
+        img.src = "https://via.placeholder.com/300x450?text=No+Poster";
+    } else {
+        img.src = movie.Poster;
+    }
     card.appendChild(img);
 
     let title = document.createElement("h3");
@@ -25,19 +29,26 @@ function createMovieCard(movie, btnType) {
     let watchBtn = document.createElement("button");
 
     if (btnType == "add") {
-
-        watchBtn.textContent = "Add to Watchlist";
-
-        watchBtn.addEventListener("click", () => {
-            let added = addToWatchlist(movie);
-            if (added) {
-                watchBtn.textContent = "Added";
-                watchBtn.disabled = true;
-            }
+        let existingMovie = watchListMovies.find((item) => {
+            return item.imdbID === movie.imdbID;
         });
 
-    }
-    else {
+        if (existingMovie) {
+            watchBtn.textContent = "Added";
+            watchBtn.disabled = true;
+        } else {
+            watchBtn.textContent = "Add to Watchlist";
+
+            watchBtn.addEventListener("click", () => {
+                let added = addToWatchlist(movie);
+                if (added) {
+                    watchBtn.textContent = "Added";
+                    watchBtn.disabled = true;
+                }
+            });
+
+        }
+    } else {
         watchBtn.textContent = "Remove";
         watchBtn.addEventListener("click", () => {
             removeFromWatchlist(movie);
@@ -62,7 +73,6 @@ async function searchMovie() {
             let response = await fetch(url);
             let movieData = await response.json();
 
-            console.log(movieData.Search);
 
             moviesContainer.innerHTML = "";
 
@@ -73,6 +83,7 @@ async function searchMovie() {
 
                 });
                 message.textContent = "";
+                searchInput.value = "";
             }
             else {
                 message.textContent = "Movie not found";
@@ -108,9 +119,17 @@ searchBtn.addEventListener("click", () => {
     searchMovie();
 });
 
+searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        searchMovie();
+    }
+});
+
+
+
 
 function removeFromWatchlist(movie) {
-    watchListMovies=watchListMovies.filter((item) => {
+    watchListMovies = watchListMovies.filter((item) => {
         return item.imdbID !== movie.imdbID;
     });
 
@@ -124,12 +143,12 @@ function displayWatchlist() {
 
     watchlistContainer.innerHTML = "";
 
-    if(watchListMovies.length===0){
-        watchlistMessage.style.display="block";
+    if (watchListMovies.length === 0) {
+        watchlistMessage.style.display = "block";
         return;
     }
 
-    watchlistMessage.style.display="none";
+    watchlistMessage.style.display = "none";
 
     watchListMovies.forEach((movie) => {
         let card = createMovieCard(movie, "remove");
@@ -137,7 +156,3 @@ function displayWatchlist() {
     });
 }
 displayWatchlist();
-
-
-
-
