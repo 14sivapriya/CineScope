@@ -2,7 +2,7 @@ let searchInput = document.getElementById("searchInput");
 let searchBtn = document.querySelector("#searchBtn");
 let message = document.getElementById("message");
 let moviesContainer = document.getElementById("moviesContainer");
-let watchListMovies = [];
+let watchListMovies = JSON.parse(localStorage.getItem("watchlist")) || [];
 let watchlistContainer = document.getElementById("watchlistContainer");
 let watchlistMessage = document.getElementById("watchlistMessage");
 
@@ -97,6 +97,7 @@ function addToWatchlist(movie) {
     }
     else {
         watchListMovies.push(movie);
+        localStorage.setItem("watchlist", JSON.stringify(watchListMovies));
         message.textContent = "Added to Watchlist";
         displayWatchlist();
         return true;
@@ -112,6 +113,8 @@ function removeFromWatchlist(movie) {
     watchListMovies=watchListMovies.filter((item) => {
         return item.imdbID !== movie.imdbID;
     });
+
+    localStorage.setItem("watchlist", JSON.stringify(watchListMovies));
 
     displayWatchlist();
 }
@@ -133,6 +136,7 @@ function displayWatchlist() {
         watchlistContainer.append(card);
     });
 }
+displayWatchlist();
 
 
 
