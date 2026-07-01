@@ -36,7 +36,8 @@ CineScope is a Movie Discovery web application built using HTML, CSS, and JavaSc
 
 ### Watchlist
 
-<img width="1365" height="720" alt="screenshot_watchlist" src="https://github.com/user-attachments/assets/b23a49e5-7b0f-47cb-95a3-534f331460ed" />
+<img width="1366" height="768" alt="screenshot_watchlist" src="https://github.com/user-attachments/assets/f88c8b36-bb44-465b-a346-fca55614ffde" />
+
 
 ---
 
