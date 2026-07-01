@@ -96,7 +96,7 @@ git clone https://github.com/14sivapriya/CineScope.git
 
 ## 👩‍💻 Author
 
-**Sivapriya**
+**Siva Priya**
 
 GitHub: https://github.com/14sivapriya
 
