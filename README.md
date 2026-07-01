@@ -1,26 +1,46 @@
 # 🎬 CineScope
 
-CineScope is a movie discovery web application built with **HTML, CSS, and JavaScript**. Users can search for movies, view movie details, and create a personal watchlist.
+CineScope is a Movie Discovery web application built using HTML, CSS, and JavaScript. It allows users to search for movies using the OMDb API, view movie details, and maintain a persistent watchlist using localStorage.
 
-## ✨ Features
+## 🚀 Features
 
-* 🔍 Search movies by title
-* 🌐 Fetch movie data using the OMDb API
-* 🎬 Display movie posters, titles, and release years
-* ⭐ Add movies to a personal watchlist
-* 🚫 Prevent duplicate movies in the watchlist
-* 🗑️ Remove movies from the watchlist
-* ⚠️ Handle invalid searches and network errors gracefully
-* ♻️ Reusable movie card component for cleaner code
+- 🔍 Search movies by title
+- 🎞️ Display movie posters, titles, and release years
+- ❤️ Add movies to a personal watchlist
+- 🗑️ Remove movies from the watchlist
+- 💾 Watchlist is saved using localStorage
+- ⌨️ Press Enter to search
+- 🚫 Prevent duplicate movies in the watchlist
+- 📱 Responsive movie card layout
+- ⚡ Dynamic UI using JavaScript DOM manipulation
+
+---
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
-* OMDb API
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- OMDb API
+- localStorage
+- Git & GitHub
 
-## 📁 Project Structure
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+<img width="1365" height="720" alt="screenshot_home" src="https://github.com/user-attachments/assets/b23a49e5-7b0f-47cb-95a3-534f331460ed" />
+
+
+### Watchlist
+
+<img width="1365" height="720" alt="screenshot_watchlist" src="https://github.com/user-attachments/assets/b23a49e5-7b0f-47cb-95a3-534f331460ed" />
+
+---
+
+## 📂 Project Structure
 
 ```
 CineScope/
@@ -30,38 +50,57 @@ CineScope/
 │── README.md
 ```
 
-## 🚀 How to Run
+---
 
-1. Clone the repository.
-2. Open the project folder.
-3. Open `index.html` in your browser.
-4. Search for your favorite movies and start building your watchlist.
+## 🧠 Concepts Practiced
 
-## 🔮 Future Improvements
-
-* 💾 Save the watchlist using Local Storage
-* ⌨️ Press Enter to search
-* 🎨 UI improvements and animations
-* 📱 Better mobile responsiveness
-* ⭐ Display more movie details
-
-## 📚 What I Learned
-
-While building CineScope, I practiced:
-
-* DOM Manipulation
-* Fetch API
-* Async/Await
-* Event Listeners
-* Array Methods (`forEach`, `find`, `filter`)
-* Dynamic Element Creation
-* Functions and Code Reusability
-* Error Handling with `try...catch`
-
-## 👨‍💻 Author
-
-**Siva Priya**
+- DOM Manipulation
+- Event Listeners
+- Functions
+- Arrays & Objects
+- Array Methods (`find`, `filter`, `forEach`)
+- Async/Await
+- Fetch API
+- JSON
+- localStorage
+- Dynamic DOM Creation
+- Git & GitHub
 
 ---
 
-⭐ If you like this project, consider giving it a star on GitHub!
+## ▶️ How to Run
+
+1. Clone this repository
+
+```bash
+git clone https://github.com/14sivapriya/CineScope.git
+```
+
+2. Open the project folder.
+
+3. Open `index.html` in your browser.
+
+---
+
+## 🌟 Future Improvements
+
+- Movie details page
+- Trailer integration
+- Genre filtering
+- Pagination
+- Dark/Light mode
+- Favorites section
+
+---
+
+## 👩‍💻 Author
+
+**Sivapriya**
+
+GitHub: https://github.com/14sivapriya
+
+---
+
+## ⭐ If you like this project
+
+Please consider giving it a ⭐ on GitHub!
