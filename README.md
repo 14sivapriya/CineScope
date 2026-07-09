@@ -2,6 +2,10 @@
 
 CineScope is a Movie Discovery web application built using HTML, CSS, and JavaScript. It allows users to search for movies using the OMDb API, view movie details, and maintain a persistent watchlist using localStorage.
 
+## 🌐 Live Demo
+
+👉 https://cine-scope-phi-mauve.vercel.app/
+
 ## 🚀 Features
 
 - 🔍 Search movies by title
